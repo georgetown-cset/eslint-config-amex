@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-amex",
+  "name": "@eto/eslint-config-amex",
   "version": "15.3.1",
   "description": "American Express' ESLint config",
   "main": "index.js",
@@ -9,6 +9,8 @@
     "test": "npm run test:unit",
     "test:git-history": "commitlint --from origin/main --to HEAD",
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i",
+    "artifactregistry-login": "npx google-artifactregistry-auth",
+    "arlogin": "npm run artifactregistry-login",
     "posttest": "npm run test:lint && npm run test:git-history && npm run test:lockfile"
   },
   "jest": {
